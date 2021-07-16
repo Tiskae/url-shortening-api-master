@@ -12,8 +12,8 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/url-shortening-api-master)
--   Live Site URL: [Add live site URL here](https://shorten-url.netlify.app)
+-   Solution URL: [https://github.com/url-shortening-api-master](https://github.com/url-shortening-api-master)
+-   Live Site URL: [https://shorten-url.netlify.app](https://shorten-url.netlify.app)
 
 ### Built with
 
@@ -25,6 +25,6 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 ## Author
 
--   Website - [Add your name here](https://tiskae.netlify.app)
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/tiskae)
--   Twitter - [@yourusername](https://www.twitter.com/tiskae1)
+-   Website - [Ibrahim Adedokun](https://tiskae.netlify.app)
+-   Frontend Mentor - [@Tiskae](https://www.frontendmentor.io/profile/tiskae)
+-   Twitter - [@Tiskae1](https://www.twitter.com/tiskae1)
