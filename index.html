@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="src/css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <script defer src="src/js/index.js"></script>
+
+        <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    </head>
+    <body>
+        <header class="section-header">
+            <nav class="navbar">
+                <div class="navbar__logo-box">
+                    <img
+                        src="src/images/logo-dark.svg"
+                        alt="Shortly logo"
+                        class="navbar__logo"
+                    />
+                </div>
+
+                <div class="navbar__actions">
+                    <ul class="navbar__actions--list">
+                        <li class="navbar__action--item">
+                            <a
+                                href="#"
+                                class="
+                                    navbar__action--link
+                                    paragraph paragraph--sm paragraph--bold
+                                    link link--light
+                                "
+                                >Features</a
+                            >
+                        </li>
+                        <li class="navbar__action--item">
+                            <a
+                                href="#"
+                                class="
+                                    navbar__action--link
+                                    paragraph paragraph--sm paragraph--bold
+                                    link link--light
+                                "
+                                >Pricing</a
+                            >
+                        </li>
+                        <li class="navbar__action--item">
+                            <a
+                                href="#"
+                                class="
+                                    navbar__action--link
+                                    paragraph paragraph--sm paragraph--bold
+                                    link link--light
+                                "
+                                >Resources</a
+                            >
+                        </li>
+                    </ul>
+
+                    <div class="navbar__actions--auth">
+                        <button class="btn btn--sm btn--light">Login</button>
+                        <button class="btn btn--sm btn--primary btn--round">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+                <div class="menubar__btn">
+                    <span class="menubar__btn--line menubar__btn--line-1"
+                        >&nbsp;</span
+                    ><span class="menubar__btn--line menubar__btn--line-2"
+                        >&nbsp;</span
+                    ><span class="menubar__btn--line menubar__btn--line-3"
+                        >&nbsp;</span
+                    >
+                </div>
+            </nav>
+
+            <div class="sidedrawer">
+                <ul class="sidedrawer__actions--list">
+                    <li class="sidedrawer__action--item">
+                        <a
+                            href="#"
+                            class="
+                                sidedrawer__action--link
+                                paragraph paragraph--lg paragraph--bold
+                                link link--white
+                            "
+                            >Features</a
+                        >
+                    </li>
+                    <li class="sidedrawer__action--item">
+                        <a
+                            href="#"
+                            class="
+                                sidedrawer__action--link
+                                paragraph paragraph--lg paragraph--bold
+                                link link--white
+                            "
+                            >Pricing</a
+                        >
+                    </li>
+                    <li class="sidedrawer__action--item">
+                        <a
+                            href="#"
+                            class="
+                                sidedrawer__action--link
+                                paragraph paragraph--lg paragraph--bold
+                                link link--white
+                            "
+                            >Resources</a
+                        >
+                    </li>
+                </ul>
+
+                <div class="sidedrawer__actions--auth">
+                    <button class="btn btn--lg btn--white">Login</button>
+                    <button class="btn btn--lg btn--primary btn--round">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero">
+                <div class="hero__part--1">
+                    <div class="hero__text-box">
+                        <h1 class="heading--primary">
+                            More than just shorter links
+                        </h1>
+                        <p class="paragraph paragraph--lg">
+                            Build your brand's recognition and get detailed
+                            insights on how your links are performing
+                        </p>
+                    </div>
+                    <button class="btn btn--md btn--primary btn--round">
+                        Get Started
+                    </button>
+                </div>
+                <div class="hero__part--2"></div>
+            </div>
+        </header>
+
+        <section class="section-stats">
+            <div class="shortening-container">
+                <div class="shortening-box">
+                    <form class="shortening-form">
+                        <input
+                            class="shortening__input-field"
+                            type="text"
+                            placeholder="Shorten a link here..."
+                        />
+                        <p class="error-message">Something went wrong!</p>
+                        <button
+                            class="
+                                btn btn--lg btn--primary btn--round-sm
+                                shorten__link-btn
+                            "
+                        >
+                            Shorten it!
+                        </button>
+                    </form>
+                </div>
+
+                <ul class="generated__link--list"></ul>
+            </div>
+            <div class="stats__intro">
+                <h2 class="heading--2">Advanced Statistics</h2>
+                <p class="paragraph paragraph--sm">
+                    Track how your links are performing across the web with our
+                    advanced statistics dashboard.
+                </p>
+            </div>
+
+            <div class="stats__boxes">
+                <div class="stat__box">
+                    <div class="stat__image-box">
+                        <img
+                            src="src/images/icon-brand-recognition.svg"
+                            alt="brand recognition icon"
+                            class="stat__img"
+                        />
+                    </div>
+                    <div class="stat__info">
+                        <h3 class="heading--3">Brand recognition</h3>
+                        <p class="paragraph paragraph--sm">
+                            Boost your brand recognition with each click.
+                            Generic links don’t mean a thing. Branded links help
+                            instil confidence in your content.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="stat__box">
+                    <div class="stat__image-box">
+                        <img
+                            src="src/images/icon-detailed-records.svg"
+                            alt="detailed records icon"
+                            class="stat__img"
+                        />
+                    </div>
+                    <div class="stat__info">
+                        <h3 class="heading--3">Detailed Records</h3>
+                        <p class="paragraph paragraph--sm">
+                            Gain insights into who is clicking your links.
+                            Knowing when and where people engage with your
+                            content helps inform better decisions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="stat__box">
+                    <div class="stat__image-box">
+                        <img
+                            src="src/images/icon-fully-customizable.svg"
+                            alt="fully customizable icon"
+                            class="stat__img"
+                        />
+                    </div>
+                    <div class="stat__info">
+                        <h3 class="heading--3">Fully Customizable</h3>
+                        <p class="paragraph paragraph--sm">
+                            Improve brand awareness and content discoverability
+                            through customizable links, supercharging audience
+                            engagement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-boost">
+            <h2 class="heading--2 heading--white">Boost your links today</h2>
+            <button class="btn btn--md btn--round btn--primary">
+                Get Started
+            </button>
+        </section>
+
+        <footer class="section-footer">
+            <div class="footer__logo-box">
+                <img
+                    src="src/images/logo-light.svg"
+                    alt="Shortly logo"
+                    class="footer__logo"
+                />
+            </div>
+
+            <div class="footer__section">
+                <h5 class="heading--5 heading--white heading--bold">
+                    Features
+                </h5>
+                <ul class="footer__list">
+                    <li>
+                        <a
+                            href="#"
+                            class="link link--dark paragraph paragraph--sm"
+                            >Link shortening</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="link link--dark paragraph paragraph--sm"
+                            >Branded Links</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="link link--dark paragraph paragraph--sm"
+                            >Analytics</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h5 class="heading--5 heading--white heading--bold">
+                    Resources
+                </h5>
+                <ul class="footer__list">
+                    <li>
+                        <a
+                            href="#"
+                            class="link link--dark paragraph paragraph--sm"
+                            >Blog</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="link link--dark paragraph paragraph--sm"
+                            >Developers</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="link link--dark paragraph paragraph--sm"
+                            >Support</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h5 class="heading--5 heading--white heading--bold">Company</h5>
+                <ul class="footer__list">
+                    <li>
+                        <a
+                            href="#"
+                            class="link link--dark paragraph paragraph--sm"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="link link--dark paragraph paragraph--sm"
+                            >Our Team</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="link link--dark paragraph paragraph--sm"
+                            >Careers</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="link link--dark paragraph paragraph--sm"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <address class="footer__icon-socials">
+                <div class="footer__icon-social-box">
+                    <a href="#">
+                        <img
+                            src="src/images/icon-facebook.svg"
+                            alt="Facebook icon"
+                            class="footer__icon-social"
+                    /></a>
+                </div>
+                <div class="footer__icon-social-box">
+                    <a href="#">
+                        <img
+                            src="src/images/icon-twitter.svg"
+                            alt="Twitter icon"
+                            class="footer__icon-social"
+                    /></a>
+                </div>
+                <div class="footer__icon-social-box">
+                    <a href="#"
+                        ><img
+                            src="src/images/icon-pinterest.svg"
+                            alt="Pinterest icon"
+                            class="footer__icon-social"
+                    /></a>
+                </div>
+                <div class="footer__icon-social-box">
+                    <a href="#">
+                        <img
+                            src="src/images/icon-instagram.svg"
+                            alt="icon-instagram icon"
+                            class="footer__icon-social"
+                    /></a>
+                </div>
+            </address>
+        </footer>
+
+        <address class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://tiskae.netlify.app" target="_blank">Tiskae</a>.
+        </address>
+    </body>
+</html>

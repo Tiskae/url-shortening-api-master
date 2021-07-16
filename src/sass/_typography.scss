@@ -1,0 +1,218 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+button {
+    font-family: "Poppins", sans-serif !important;
+    line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: hsl(260, 8%, 14%);
+}
+
+.heading {
+    &--primary {
+        font-size: 4rem;
+        line-height: 1.1;
+
+        @include respond(desktop) {
+            font-size: 3rem;
+        }
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+        @include respond(mobile) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &--2 {
+        font-size: 2rem;
+
+        @include respond(mobile) {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+
+    &--3 {
+        font-size: 1.1rem;
+    }
+
+    &--5 {
+        font-size: 0.8rem;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    &--white {
+        color: white;
+    }
+}
+
+.paragraph {
+    color: hsl(257, 7%, 63%);
+
+    &--lg {
+        font-size: 1rem;
+        color: hsl(257, 7%, 63%);
+    }
+
+    &--md {
+        font-size: 0.9rem;
+    }
+
+    &--sm {
+        font-size: 0.8rem;
+    }
+
+    &--bold {
+        font-weight: bold;
+    }
+
+    &--cyan {
+        color: hsl(180, 66%, 49%);
+    }
+
+    &--black {
+        color: black;
+    }
+}
+
+.btn {
+    font-family: inherit;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &--sm {
+        font-size: 0.7rem;
+        padding: 0.5rem 1.2rem;
+        border-radius: 0.3rem;
+
+        &-padded {
+            width: 5rem;
+        }
+    }
+
+    &--md {
+        padding: 0.8rem 2rem;
+    }
+
+    &--lg {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+
+    &--round {
+        border-radius: 100rem;
+    }
+
+    &--round-sm {
+        border-radius: 0.5rem;
+    }
+
+    &--light {
+        background-color: transparent;
+        color: hsl(257, 7%, 63%);
+
+        &:hover {
+            color: hsl(180, 66%, 49%);
+        }
+    }
+
+    &--white {
+        background-color: transparent;
+        color: white;
+
+        &:hover {
+            color: hsl(180, 66%, 49%);
+        }
+    }
+
+    &--primary {
+        background-color: hsl(180, 66%, 49%);
+        color: white;
+
+        &:hover {
+            background-color: hsl(180, 41%, 72%);
+        }
+    }
+
+    &--secondary {
+        background-color: hsl(257, 27%, 26%);
+        color: white;
+
+        &:hover {
+            background-color: hsl(257, 27%, 36%);
+        }
+    }
+
+    &--loading {
+        position: relative;
+        background-color: hsl(180, 25%, 42%);
+        color: rgb(104, 104, 104);
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: hsl(180, 25%, 42%);
+        }
+
+        &:after {
+            content: url("../images/spinner9.png");
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            animation: rotate 0.5s infinite;
+            backface-visibility: hidden;
+        }
+    }
+}
+
+.link {
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &--light {
+        &:hover {
+            color: hsl(260, 8%, 14%);
+        }
+    }
+
+    &--dark {
+        &:hover {
+            color: hsl(180, 66%, 49%);
+        }
+    }
+
+    &--white {
+        color: white;
+        &:hover {
+            color: hsl(180, 66%, 49%);
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+}

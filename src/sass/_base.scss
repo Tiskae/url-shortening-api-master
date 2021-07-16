@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: "Alata", sans-serif;
+    font-weight: 500;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@mixin respond($bp) {
+    @if ($bp == desktop) {
+        @media only screen and (max-width: 64.5em) {
+            // 1032px
+            @content;
+        }
+    }
+    @if ($bp == tab-land) {
+        @media only screen and (max-width: 54.5em) {
+            // 872 px
+            @content;
+        }
+    }
+    @if ($bp == tab-port) {
+        @media only screen and (max-width: 45.5em) {
+            // 728px
+            @content;
+        }
+    }
+    @if ($bp == mobile) {
+        @media only screen and (max-width: 34.5em) {
+            // 552px
+            @content;
+        }
+    }
+}
+
+@mixin padding-layout {
+    padding-left: 8rem;
+    padding-right: 8rem;
+
+    @include respond(desktop) {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    @include respond(tab-land) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    @include respond(tab-port) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include respond(mobile) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
